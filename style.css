@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    height: 100%;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+ background-color: #2c3e50;
+ color: #fff;
+ padding: 20px;
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.lead-tracker {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.lead-tracker h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.lead-tracker form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lead-tracker button {
+    padding: 8px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lead-tracker button:hover {
+   background-color: #2980b9;
+}
+
+.lead-tracker table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lead-tracker th, .lead-tracker td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.lead-tracker th {
+    background-color: #ecf0f1;
+}
+
+.lead-tracker tr:hover {
+    background-color: #f4f6f8;
+}
+
+.sales-calculator h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.sales-calculator input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sales-calculator button {
+    padding: 8px 15px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sales-calculator #result {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.sales-calculator button:hover {
+    background-color: darkgreen;
+}
+
+.metrics-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metric-card {
+    background-color: #fff;
+    flex: 1 1 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.metric-card h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.metric-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+}
+
+@media (max-width: 760px) {
+    .metrics-dashboard {
+        flex-direction: column;
+    }
+
+    .lead-tracker form{
+        flex-direction: column;
+    }
+
+    .sales-calculator input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

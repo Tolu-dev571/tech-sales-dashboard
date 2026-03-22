@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Sales Metrics Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page-container">
+
+        <header>Tech Sales Metrics Dashboard</header>
+
+        <main>
+             
+            <section class="lead-tracker">
+                <h2>lead-tracker</h2>
+                <form id="lead-form">
+                    <input type="text" id="lead-name" placeholder="Lead Name" required>
+                    <input type="text" id="lead-company" placeholder="Company" required>
+                    <input type="email" id="lead-email" placeholder="Email" required>
+                    <select id="lead-status">
+                        <option value="New">New</option>
+                        <option value="contacted">Contacted</option>
+                        <option value="qualified">Qualified</option>
+                        <option value="closed">Closed</option>
+                    </select>
+                    <button type="button" onclick="addLead()">Add Lead</button>
+                </form>
+                
+                <table id="lead-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="sales-calculator">
+              <h2>Sales Revenue Calculator</h2>
+              <input type="number" id="calc-leads" placeholder="Number of Leads">
+              <input type="number" id="calc-deal-size" placeholder="Average Deal Size ($)">
+              <input type="number" id="calc-conversion" placeholder="Conversion %">
+              
+              <button onclick="calculateRevenue()">Calculate Revenue</button>
+
+              <p id="calc-result"></p>
+            </section>
+
+            <section class="metric-dashboard">
+              <div class="metric-card">
+                <h3>Total leads</h3>
+                <p id="total-leads">0</p>
+              </div>
+              <div  class="metric-card">
+                <h3>Qualified Leads</h3>
+                <p id="qualified-leads">0</p>
+            </div>
+            <div class="metric-card">
+                <h3>Closed Deal</h3>
+                <p id="closed-deals">0</p>
+            </div>
+            <div class="metric-card">
+                <h3>Estimated Revenue</h3>
+                <p id="estimated-revenue">$0</p>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <P>&copy; 2026 Adeniji Tolu | Tech Sales Portfolio</P>
+        </footer>
+        </div>
+     
+     <script src="script.js"></script>    
+    </body>
+</html>
